@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+      <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediascreen.css">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   <section id="navbar">
+    <div class="nav">
+        <div onclick="showHome()">Home</div>
+        <div onclick="coarse()">Coarse</div>
+        <div onclick="showFee()">Fees</div>
+        <div onclick=" showAssessment()">Assessment</div>
+        <div id="moreNav">More..</div>
+
+    </div>
+   </section><br> 
+   <section id="main" class="content-section active" >
+   <div class="main-image">
+
+    <div class="size"><img src="./images/profile1.png" alt="" id="profileImage" onclick="toggleProfile() ">
+    </div>
+   </div>
+   <div class="profile-content" id="show" >
+    <div class="hello">
+  <div class="chidd">
+    <div class="student-profile">
+        <div class="mg"><img src="./images/rafeeq.png" alt="" id="profile-image"  onclick="toggleProfile() "> </div>
+               <div class="details" id="studentDetails">
+            <h1 id="studentName">Sagar Paswan</h1>
+            <span id="rollNo">Roll No. 2301301002</span>
+            <span id="enrollmentNo">Enrollment No. 44012</span>
+        </div>
+    </div>
+    <div class="student-details">
+        <div>
+            <p id="biometricNo">Biometric No. 45635</p>
+            <p id="dob">Date of Birth: 06/04/2003</p>
+            <p id="course">Course: B.Tech (CSE)</p>
+            <p id="address">Address: Model Town, Panipat</p>
+        </div>
+        <div class="gpa">
+            <span id="gpa">GPA 8.32</span>
+        </div>
+    </div>
+    <div class="btn">
+        <button class="B">Time Table</button>
+        <button class="W" onclick="showAttendance()">Attendance</button>
+    </div>
+</div>
+     
+     <div class="other-section"> 
+        <div class="before">
+            <div class="inside">
+                <div>
+                <h3>Today Time Table</h3>
+                <p> Get your Today Time Table</p>
+                <button>View More</button>
+            </div >
+            
+                <div>
+                <h3>Overall Attendance</h3>
+                <p>attendance report</p>
+                <button>View More</button>
+            </div>
+            </div>
+            <div class="inside">
+                <div>
+                <h3>Coarses</h3>
+                <p>Unlock your potential with course.</p>
+                <button onclick="coarse()">View More</button>
+            </div >
+
+                <div>
+                <h3>LMS</h3>
+                <p>Elevate learning & knowledge</p>
+                <button>View More</button>
+            </div>
+            </div>
+            <div class="inside">
+                <div>
+                <h3>Hall Ticket</h3>
+                <p>Get your Hall ticket as it is mandatory for the upcoming exam</p>
+                <button>View More</button>
+            </div >
+
+                <div>
+                <h3>Ticket</h3>
+                <p>If you have an issue or request, kindly raise a ticket through our Ticket System</p>
+                <button>View More</button>
+            </div>
+            </div>
+           
+        </div>
+     </div>
+
+     
+   </div>
+   <div class="notification">
+    <div class="new-assignment">
+        <div class="up">
+        <div>
+        <h3>New Assignment</h3>
+        <p>Subject : Operating System</p>
+        <p>Teacher: Dr. Poonam</p>
+        <p>Question: What is Operatin System?</p>
+    </div>
+    <div class="custom">
+        <label class="custom-file-upload">
+        Choose File
+        <input type="file" class="file-input" >
+    </label>
+    <div class="files">
+
+        <span class="file-name" ></span>
+    <button class="upload-button" >Upload</button>
+</div>
+</div>
+    
+
+</div> 
+    </div>
+    <div class="new-notification">
+        <h3>Notification</h3>
+       <h5>Regarding August menu of Mess for Hostel Students</h5>
+       <p>Dear Students , Kindly find the attached August menu of Mess for Hostel Students</p>
+       <b>By: Geeta University</b>
+    </div>
+   </div>
+
+   <!-- ============================= Coarse====================== -->
+
+
+
+   
+    </div>
+
+    <!-- =================================== end of course =========================== -->
+
+
+
+
+
+
+   <!-- </div> -->
+
+
+
+    <!-- <h1 class="attendance-head">Coarse</h1> -->
+
+ 
+
+   </section>
+
+   <section id="mai" style="display: none;" class="content-section">
+    <div class="swap">
+        <div class="swap-wrap">
+    <!-- Swiper -->
+    <div class="swiper mySwiper first">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide ">
+                <div class="coarse_content">
+                   <h3>Databa Management system (CS3301)</h3>
+                </div>
+                <div class="pd">
+                    <span style="color: rgb(190, 171, 171); padding: 10px;" >Core</span>
+                </div>
+                <div class="coarse_info">
+                    <div class="coarse_type">
+                        <div class="p">Type</div>
+                        <div class="p">Theory</div>
+                    </div>
+                    <div class="coarse_type">
+                        <div class="p">No. of lectures</div>
+                        <div class="p">60</div>
+                    </div>
+                    <div class="coarse_type">
+                        <div class="p">Teacher</div>
+                        <div class="p">Mr. Hemant</div>
+                    </div>
+                </div>
+                <div class="slide-btn">
+                    <button class="W">Assignment</button>
+                    <button class="B"> Attendance</button>
+                </div>
+            </div>
+            <div class="swiper-slide ">
+                <div class="coarse_content">
+                   <h3>Professional Photgraphy (FA3370)</h3>
+                </div>
+                <div class="pd" style="width: 100%;">
+                    <span style="color: rgb(190, 171, 171); padding: 10px; width: 100%;" >Open Elective</span>
+                </div>
+                <div class="coarse_info">
+                    <div class="coarse_type">
+                        <div class="p">Type</div>
+                        <div class="p">Practical</div>
+                    </div>
+                    <div class="coarse_type">
+                        <div class="p">No. of lectures</div>
+                        <div class="p">60</div>
+                    </div>
+                    <div class="coarse_type">
+                        <div class="p">Teacher</div>
+                        <div class="p">Mr. Umesh</div>
+                    </div>
+                </div>
+                <div class="slide-btn">
+                    <button class="W">Assignment</button>
+                    <button class="B"> Attendance</button>
+                </div>
+            </div> 
+                    <!-- subject 3 -->
+
+                    <div class="swiper-slide ">
+                        <div class="coarse_content">
+                           <h3>Object Oriented Programming (CS3303)</h3>
+                        </div>
+                        <div class="pd">
+                            <span style="color: rgb(190, 171, 171); padding: 10px;" >Core</span>
+                        </div>
+                        <div class="coarse_info">
+                            <div class="coarse_type">
+                                <div class="p">Type</div>
+                                <div class="p">Theory</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">No. of lectures</div>
+                                <div class="p">60</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">Teacher</div>
+                                <div class="p">Mr. Rafeeq</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- subject 4 -->
+
+                    <div class="swiper-slide ">
+                        <div class="coarse_content">
+                           <h3>Databa Management system Lab (CS3340)</h3>
+                        </div>
+                        <div class="pd">
+                            <span style="color: rgb(190, 171, 171); padding: 10px;" >Core</span>
+                        </div>
+                        <div class="coarse_info">
+                            <div class="coarse_type">
+                                <div class="p">Type</div>
+                                <div class="p">Practical</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">No. of lectures</div>
+                                <div class="p">60</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">Teacher</div>
+                                <div class="p">Mr. Hemant</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- subject 5 -->
+
+                    <div class="swiper-slide ">
+                        <div class="coarse_content">
+                           <h3>Object Oriented Programming Lab (CS3342)</h3>
+                        </div>
+                        <div class="pd">
+                            <span style="color: rgb(190, 171, 171); padding: 10px;" >Core</span>
+                        </div>
+                        <div class="coarse_info">
+                            <div class="coarse_type">
+                                <div class="p">Type</div>
+                                <div class="p">Practical</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">No. of lectures</div>
+                                <div class="p">60</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">Teacher</div>
+                                <div class="p">Mr. Rafeeq</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- subject 6 -->
+
+                    <div class="swiper-slide ">
+                        <div class="coarse_content">
+                           <h3>Aptitude & Reasoning – II (SE3302)</h3>
+                        </div>
+                        <div class="pd">
+                            <span style="color: rgb(190, 171, 171); padding: 10px;" >Skill Enhancement</span>
+                        </div>
+                        <div class="coarse_info">
+                            <div class="coarse_type">
+                                <div class="p">Type</div>
+                                <div class="p">Soft Skills/ Aptitude</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">No. of lectures</div>
+                                <div class="p">60</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">Teacher</div>
+                                <div class="p">Mr. Mohit Garg</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- subject 7 -->
+
+                    <div class="swiper-slide ">
+                        <div class="coarse_content">
+                           <h3>Soft Skills – III (SE3301)</h3>
+                        </div>
+                        <div class="pd">
+                            <span style="color: rgb(190, 171, 171); padding: 10px;" >Skill Enhancement</span>
+                        </div>
+                        <div class="coarse_info">
+                            <div class="coarse_type">
+                                <div class="p">Type</div>
+                                <div class="p">Soft Skill/Apptitude</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">No. of lectures</div>
+                                <div class="p">60</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">Teacher</div>
+                                <div class="p">Ms. Kashish Vashist</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- subject 8 -->
+
+                    <div class="swiper-slide ">
+                        <div class="coarse_content">
+                           <h3>Social Media Marketing  (VS3342)</h3>
+                        </div>
+                        <div class="pd">
+                            <span style="color: rgb(190, 171, 171); padding: 10px;" >Skill Enhancement</span>
+                        </div>
+                        <div class="coarse_info">
+                            <div class="coarse_type">
+                                <div class="p">Type</div>
+                                <div class="p">Vocational Skill</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">No. of lectures</div>
+                                <div class="p">60</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">Teacher</div>
+                                <div class="p">Ms. Ritika Gupta</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- subject 9 -->
+
+                    <div class="swiper-slide ">
+                        <div class="coarse_content">
+                           <h3>Operating System (CS3304)</h3>
+                        </div>
+                        <div class="pd">
+                            <span style="color: rgb(190, 171, 171); padding: 10px;" >Core</span>
+                        </div>
+                        <div class="coarse_info">
+                            <div class="coarse_type">
+                                <div class="p">Type</div>
+                                <div class="p">Theory</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">No. of lectures</div>
+                                <div class="p">60</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">Teacher</div>
+                                <div class="p">Dr. Poonam</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- subject 10 -->
+
+                    <div class="swiper-slide ">
+                        <div class="coarse_content">
+                           <h3>Operating System Lab (CS3343)</h3>
+                        </div>
+                        <div class="pd">
+                            <span style="color: rgb(190, 171, 171); padding: 10px;" >Core</span>
+                        </div>
+                        <div class="coarse_info">
+                            <div class="coarse_type">
+                                <div class="p">Type</div>
+                                <div class="p">Practical</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">No. of lectures</div>
+                                <div class="p">60</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">Teacher</div>
+                                <div class="p">Dr. Poonam</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- subject 11 -->
+
+                    <div class="swiper-slide ">
+                        <div class="coarse_content">
+                           <h3>Design Thinking (MB3331)</h3>
+                        </div>
+                        <div class="pd">
+                            <span style="color: rgb(190, 171, 171); padding: 10px;" >Core</span>
+                        </div>
+                        <div class="coarse_info">
+                            <div class="coarse_type">
+                                <div class="p">Type</div>
+                                <div class="p">Theory</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">No. of lectures</div>
+                                <div class="p">60</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">Teacher</div>
+                                <div class="p">Dr. Anil Kumar Lamba</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- subject 12 -->
+
+                    <div class="swiper-slide ">
+                        <div class="coarse_content">
+                           <h3>General Proficiency – III (GP3301)</h3>
+                        </div>
+                        <div class="pd">
+                            <span style="color: rgb(190, 171, 171); padding: 10px;" >Other Type</span>
+                        </div>
+                        <div class="coarse_info">
+                            <div class="coarse_type">
+                                <div class="p">Type</div>
+                                <div class="p">General Proficiency</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">No. of lectures</div>
+                                <div class="p">60</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">Teacher</div>
+                                <div class="p">Dr. Anil Kumar Lamba</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- subject 13 -->
+
+                    <div class="swiper-slide ">
+                        <div class="coarse_content">
+                           <h3>Internship – I (CS3372)</h3>
+                        </div>
+                        <div class="pd">
+                            <span style="color: rgb(190, 171, 171); padding: 10px;" >Core Elective</span>
+                        </div>
+                        <div class="coarse_info">
+                            <div class="coarse_type">
+                                <div class="p">Type</div>
+                                <div class="p">Industrial Project/ Internship</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">No. of lectures</div>
+                                <div class="p">60</div>
+                            </div>
+                            <div class="coarse_type">
+                                <div class="p">Teacher</div>
+                                <div class="p">Dr. Anil Kumar Lamba</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+        </div>
+        <div class="swiper-button-next in"></div>
+        <div class="swiper-button-prev out"></div><br><br>
+
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="action backtoprofile">
+        <button class="back" onclick="showProfile()">Back to Profile</button>
+    </div>
+      
+    </div>
+     
+     
+    </div> 
+</section>
+
+
+<section id="fees" style="display: none;" class="content-section">
+    <div class="swap swap-fee">
+        <div class="swap-wrap">
+            <div class="main-icons">
+                <div>
+                    <h2 class="">Fees</h2>
+                   
+                 
+                    <div class="mint"><i class='bx bx-receipt'></i>
+                    <i class='bx bx-transfer'></i></div>
+                </div>
+                
+                  
+            </div>
+            <div class="sam">
+            <span id="dayDisplay">Semester-1</span>
+        </div>
+            <div class="semester">
+                <p id="Semester1" onclick="showDay('Semester-1')">S1</p>
+                <p id="Semester2" onclick="showDay('Semester-2')">S2</p>
+                <p id="Semester3" onclick="showDay('Semester-3')">S3</p>
+                <p id="Semester4" onclick="showDay('Semester-4')">S4</p>
+                <p id="Semester5" onclick="showDay('Semester-5')">S5</p>
+                <p id="Semester6" onclick="showDay('Semester-6')">S6</p>
+                <p id="Semester7" onclick="showDay('Semester-7')">S7</p>
+                <p id="Semester8" onclick="showDay('Semester-8')">S8</p>
+            </div>
+            <div class="fees-area Semester-1 slider"  >
+                <div class="cont">
+                <div>Development fee</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Tution fee</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Insurance fees</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Exam fees</div>
+                <div>17500</div>
+            </div>
+                
+                <div class="cont">
+                <div>Total</div>
+                <div>17500</div>
+            </div>
+            <div class="cont pending" >
+                <div>Pending</div>
+                <div>17500</div>
+            </div>
+            
+                
+            </div>
+            <!-- Semester2 -->
+            <div class="fees-area Semester-2 slider" style="display: none;">
+                <div class="cont">
+                <div>Development fee</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Tution fee</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Insurance fees</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Exam fees</div>
+                <div>17500</div>
+            </div>
+                
+                <div class="cont">
+                <div>Total</div>
+                <div>17500</div>
+            </div>
+            <div class="cont pending" >
+                <div>Pending</div>
+                <div>17500</div>
+            </div>
+            
+                
+            </div>
+            <!-- end of semester 2 -->
+             <!-- Semester3 -->
+             <div class="fees-area Semester-3 slider" style="display: none;">
+                <div class="cont">
+                <div>Development fee</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Tution fee</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Insurance fees</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Exam fees</div>
+                <div>17500</div>
+            </div>
+                
+                <div class="cont">
+                <div>Total</div>
+                <div>17500</div>
+            </div>
+            <div class="cont pending" >
+                <div>Pending</div>
+                <div>17500</div>
+            </div>
+            
+                
+            </div>
+              <!-- end of semester3 -->
+               <!-- semester4 -->
+               <div class="fees-area Semester-4 slider" style="display: none;">
+                <div class="cont">
+                <div>Development fee</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Tution fee</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Insurance fees</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Exam fees</div>
+                <div>17500</div>
+            </div>
+                
+                <div class="cont">
+                <div>Total</div>
+                <div>17500</div>
+            </div>
+            <div class="cont pending" >
+                <div>Pending</div>
+                <div>17500</div>
+            </div>
+            
+                
+            </div>
+                <!-- end of semester4 -->
+               <!-- semester5 -->
+               <div class="fees-area Semester-5 slider" style="display: none;">
+                <div class="cont">
+                <div>Development fee</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Tution fee</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Insurance fees</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Exam fees</div>
+                <div>17500</div>
+            </div>
+                
+                <div class="cont">
+                <div>Total</div>
+                <div>17500</div>
+            </div>
+            <div class="cont pending" >
+                <div>Pending</div>
+                <div>17500</div>
+            </div>
+            
+                
+            </div>
+                <!-- end of semester5 -->
+               <!-- semester6 -->
+               <div class="fees-area Semester-6 slider" style="display: none;">
+                <div class="cont">
+                <div>Development fee</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Tution fee</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Insurance fees</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Exam fees</div>
+                <div>17500</div>
+            </div>
+                
+                <div class="cont">
+                <div>Total</div>
+                <div>17500</div>
+            </div>
+            <div class="cont pending" >
+                <div>Pending</div>
+                <div>17500</div>
+            </div>
+            
+                
+            </div>
+                <!-- end of semester6 -->
+               <!-- semester7 -->
+               <div class="fees-area Semester-7 slider" style="display: none;">
+                <div class="cont">
+                <div>Development fee</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Tution fee</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Insurance fees</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Exam fees</div>
+                <div>17500</div>
+            </div>
+                
+                <div class="cont">
+                <div>Total</div>
+                <div>17500</div>
+            </div>
+            <div class="cont pending" >
+                <div>Pending</div>
+                <div>17500</div>
+            </div>
+            
+                
+            </div>
+                <!-- end of semester7 -->
+               <!-- semester8 -->
+               <div class="fees-area Semester-8 slider" style="display: none;">
+                <div class="cont">
+                <div>Development fee</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Tution fee</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Insurance fees</div>
+                <div>17500</div>
+            </div>
+                <div class="cont">
+                <div>Exam fees</div>
+                <div>17500</div>
+            </div>
+                
+                <div class="cont">
+                <div>Total</div>
+                <div>17500</div>
+            </div>
+            <div class="cont pending" >
+                <div>Pending</div>
+                <div>17500</div>
+            </div>
+            
+                
+            </div>
+                <!-- end of semester8 -->
+
+
+            <div class="action backtoprofile">
+                <button class="back" onclick="showProfile()">Back to Profile</button>
+                <button class="back" style="background-color: #6EACDA;">Pay Now</button>
+            </div>
+
+
+
+
+
+
+
+
+            </div>
+            </div>
+
+</section>
+
+
+<section id="Assessment" style="display: none;" class="content-section">
+
+    <div class="asset-1">
+        <h1>Assessment</h1>
+        <div class="action-btn">
+            <button>New Assigned</button>
+            <button> Recent</button>
+        </div>
+
+        <div class="new-assignment scroll "  scrollbar="true" direction="vertical" slides-per-view="auto" free-mode="true"
+        mousewheel="true">
+            <div class="up asset-detail">
+
+            <div class="bd">
+            
+            <p>Subject : Operating System</p>
+            <p style="font-weight: 700;">Teacher: Dr. Poonam</p>
+            <p style="text-decoration: underline;">Questions: </p>
+<ol>
+    <li>what is database<span style="font-size: 12px; color: rgb(141, 181, 224) ;">25 Marks</span></li>
+    <li>Define its structure and type. <span style="font-size: 12px; color: rgb(141, 181, 224) ;">25 Marks</span></li>
+</ol>   
+   
+     </div>
+        <div class="custom">
+            <label class="custom-file-upload">
+            Choose File
+            <input type="file" class="file-input" >
+        </label>
+        <div class="files">
+    
+            <span class="file-name" ></span>
+        <button class="upload-button" >Upload</button>
+    </div>
+    </div>
+        
+    
+    </div>
+           <!-- here -->
+           <div class="up asset-detail">
+            <div class="bd">
+            
+            <p>Subject : Operating System</p>
+            <p style="font-weight: 700;">Teacher: Dr. Poonam</p>
+<ol>
+    <li>what is database? <span style="font-size: 12px; color: rgb(141, 181, 224) ;">25 Marks</span></li>
+    <li>Define its structure and type. <span style="font-size: 12px; color: rgb(141, 181, 224) ;">25 Marks</span></li>
+</ol>   
+     </div>
+        <div class="custom">
+            <label class="custom-file-upload">
+            Choose File
+            <input type="file" class="file-input" >
+        </label>
+        <div class="files">
+    
+            <span class="file-name" ></span>
+        <button class="upload-button" >Upload</button>
+    </div>
+    </div>
+        
+    
+    </div>
+            
+        </div> 
+
+        <div class="action backtoprofile">
+            <button class="back" onclick="showProfile()">Back to Profile</button>
+        </div>
+    </div>
+</section>
+
+<!-- </section> -->
+<!-- Recent -->
+<!-- <section>
+
+</section> -->
+<!-- end of recent -->
+
+
+
+<!-- More -->
+
+<section id="More">
+    <div class="menu">
+        <div class="menu-content">
+            <div class="menu-item" data-section="main" onclick="showProfile()">Dashboard</div>
+            <div class="menu-item" data-section="mai" onclick="coarse()">Coarse</div>
+            <div class="menu-item" data-section="fees" onclick=" showFee()">Fees</div>
+            <div class="menu-item" data-section="attendance">Overall Attendance</div>
+            <div class="menu-item" data-section="Assessment" onclick="showAssessment()">Assessment</div>
+            <div class="menu-item" data-section="quiz">Quiz</div>
+            <div class="menu-item" data-section="registration">Registration</div>
+            <div class="menu-item" data-section="library">Library</div>
+            <div class="menu-item" data-section="query">Query</div>
+            <div class="menu-item" data-section="geeta">Geeta University</div>
+    </div>
+    </div>
+</section>
+ <!-- end of more -->
+
+ <!-- attendance -->
+
+ <section>
+    <section id="attendance" class="content-section attendance-content" style="display: none;">
+
+        <div class="swap">
+            <div class="swap-wrap">
+        <!-- Swiper -->
+        <div class="swiper mySwiper first">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide ">
+                    <div class="coarse_content">
+                       <h3>Databa Management system (CS3301)</h3>
+                    </div>
+                    <!-- <div class="pd">
+                        <span style="color: rgb(190, 171, 171); padding: 10px;" >Core</span>
+                    </div> -->
+                    <div class="coarse_info bind">
+                        <div class="subject" id="dbms_theory" onclick="toggleDetails('dbms_theoryDetails')">
+                            <h3>Theory</h3>
+                            <div class="progress-circle">
+                                <svg viewBox="0 0 36 36" class="circular-chart">
+                                    <path class="circle-bg" d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    <path id="dbms_theoryCircle" class="circle" stroke-dasharray="0, 100"
+                                        d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                </svg>
+                                <span id="dbms_theoryPercentage">0%</span>
+                            </div>
+                            <div class="subject-details" id="dbms_theoryDetails">
+                                <h4>Detailed Stats</h4>
+                                <p>Last Week: 80%</p>
+                                <p>Last Month: 85%</p>
+                            </div>
+                        </div>
+                        <!-- practical -->
+                        <div class="subject" id="dbms_lab" onclick="toggleDetails('dbms_labDetails')">
+                            <h3>Practical</h3>
+                            <div class="progress-circle">
+                                <svg viewBox="0 0 36 36" class="circular-chart">
+                                    <path class="circle-bg" d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    <path id="dbms_labCircle" class="circle" stroke-dasharray="0, 100"
+                                        d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                </svg>
+                                <span id="dbms_labPercentage">0%</span>
+                            </div>
+                            <div class="subject-details" id="dbms_labDetails">
+                                <h4>Detailed Stats</h4>
+                                <p>Last Week: 75%</p>
+                                <p>Last Month: 78%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-btn">
+                        <button class="W">Assignment</button>
+                        <button class="B"> Attendance</button>
+                    </div>
+                </div>
+                <div class="swiper-slide ">
+                    <div class="coarse_content ">
+                       <h3>Operating System (CS3304)</h3>
+                    </div>
+                    
+                    <div class="coarse_info bind">
+                        <div class="subject" id="os_theory" onclick="toggleDetails('os_theoryDetails')">
+                            <h3>Theory</h3>
+                            <div class="progress-circle">
+                                <svg viewBox="0 0 36 36" class="circular-chart">
+                                    <path class="circle-bg" d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    <path id="os_theoryCircle" class="circle" stroke-dasharray="0, 100"
+                                        d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                </svg>
+                                <span id="os_theoryPercentage">0%</span>
+                            </div>
+                            <div class="subject-details" id="os_theoryDetails">
+                                <h4>Detailed Stats</h4>
+                                <p>Last Week: 80%</p>
+                                <p>Last Month: 85%</p>
+                            </div>
+                        </div>
+                        <!-- practical -->
+                        <div class="subject" id="os_lab" onclick="toggleDetails('os_labDetails')">
+                            <h3>Practical</h3>
+                            <div class="progress-circle">
+                                <svg viewBox="0 0 36 36" class="circular-chart">
+                                    <path class="circle-bg" d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    <path id="os_labCircle" class="circle" stroke-dasharray="0, 100"
+                                        d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                </svg>
+                                <span id="os_labPercentage">0%</span>
+                            </div>
+                            <div class="subject-details" id="os_labDetails">
+                                <h4>Detailed Stats</h4>
+                                <p>Last Week: 75%</p>
+                                <p>Last Month: 78%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-btn">
+                        <button class="W">Assignment</button>
+                        <button class="B"> Attendance</button>
+                    </div>
+                </div> 
+                        <!-- subject 3 -->
+    
+                        <div class="swiper-slide ">
+                            <div class="coarse_content">
+                               <h3>Object Oriented Programming (CS3303)</h3>
+                            </div>
+                           
+                            <div class="coarse_info bind">
+                                <div class="subject" id="opps_theory" onclick="toggleDetails('opps_theoryDetails')">
+                                    <h3>Theory</h3>
+                                    <div class="progress-circle">
+                                        <svg viewBox="0 0 36 36" class="circular-chart">
+                                            <path class="circle-bg" d="M18 2.0845
+                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            <path id="opps_theoryCircle" class="circle" stroke-dasharray="0, 100"
+                                                d="M18 2.0845
+                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        </svg>
+                                        <span id="opps_theoryPercentage">0%</span>
+                                    </div>
+                                    <div class="subject-details" id="opps_theoryDetails">
+                                        <h4>Detailed Stats</h4>
+                                        <p>Last Week: 80%</p>
+                                        <p>Last Month: 85%</p>
+                                    </div>
+                                </div>
+                                <!-- practical -->
+                                <div class="subject" id="opps_lab" onclick="toggleDetails('opps_labDetails')">
+                                    <h3>Practical</h3>
+                                    <div class="progress-circle">
+                                        <svg viewBox="0 0 36 36" class="circular-chart">
+                                            <path class="circle-bg" d="M18 2.0845
+                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            <path id="opps_labCircle" class="circle" stroke-dasharray="0, 100"
+                                                d="M18 2.0845
+                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        </svg>
+                                        <span id="opps_labPercentage">0%</span>
+                                    </div>
+                                    <div class="subject-details" id="opps_labDetails">
+                                        <h4>Detailed Stats</h4>
+                                        <p>Last Week: 75%</p>
+                                        <p>Last Month: 78%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-btn">
+                                <button class="W">Assignment</button>
+                                <button class="B"> Attendance</button>
+                            </div>
+                            
+                        </div>
+    
+                        
+    
+                        <div class="swiper-slide ">
+                            <div class="coarse_content">
+                               <h3>Aptitude & Reasoning – II (SE3302)</h3>
+                            </div>
+                            
+                            <div class="coarse_info bind">
+                                <div class="coarse_type">
+                                    <div class="subject" id="apptitude" onclick="toggleDetails('apptitudeDetails')">
+                                        <h3>Theory</h3>
+                                        <div class="progress-circle">
+                                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                                <path class="circle-bg" d="M18 2.0845
+                                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                                    a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                                <path id="apptitudeCircle" class="circle" stroke-dasharray="0, 100"
+                                                    d="M18 2.0845
+                                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                                    a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            </svg>
+                                            <span id="apptitudePercentage">0%</span>
+                                        </div>
+                                        <div class="subject-details" id="apptitudeDetails">
+                                            <h4>Detailed Stats</h4>
+                                            <p>Last Week: 80%</p>
+                                            <p>Last Month: 85%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-btn">
+                                <button class="W">Assignment</button>
+                                <button class="B"> Attendance</button>
+                            </div>
+                            
+                        </div>
+    
+                        <!-- subject 7 -->
+    
+                        <div class="swiper-slide ">
+                            <div class="coarse_content">
+                               <h3>Soft Skills – III (SE3301)</h3>
+                            </div>
+                            
+                            <div class="coarse_info">
+                                <div class="subject" id="soft-skill" onclick="toggleDetails('soft-skillDetails')">
+                                    <h3>Theory</h3>
+                                    <div class="progress-circle">
+                                        <svg viewBox="0 0 36 36" class="circular-chart">
+                                            <path class="circle-bg" d="M18 2.0845
+                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            <path id="soft-skillCircle" class="circle" stroke-dasharray="0, 100"
+                                                d="M18 2.0845
+                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        </svg>
+                                        <span id="soft-skillPercentage">0%</span>
+                                    </div>
+                                    <div class="subject-details" id="soft-skillDetails">
+                                        <h4>Detailed Stats</h4>
+                                        <p>Last Week: 80%</p>
+                                        <p>Last Month: 85%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-btn">
+                                <button class="W">Assignment</button>
+                                <button class="B"> Attendance</button>
+                            </div>
+                            
+                        </div>
+    
+                        <!-- subject 8 -->
+    
+                        <div class="swiper-slide ">
+                            <div class="coarse_content">
+                               <h3>Social Media Marketing  (VS3342)</h3>
+                            </div>
+                            
+                            <div class="coarse_info ">
+                                <div class="subject" id="dm" onclick="toggleDetails('dmDetails')">
+                                    <h3>Theory</h3>
+                                    <div class="progress-circle">
+                                        <svg viewBox="0 0 36 36" class="circular-chart">
+                                            <path class="circle-bg" d="M18 2.0845
+                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            <path id="dmCircle" class="circle" stroke-dasharray="0, 100"
+                                                d="M18 2.0845
+                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        </svg>
+                                        <span id="dmPercentage">0%</span>
+                                    </div>
+                                    <div class="subject-details" id="dmDetails">
+                                        <h4>Detailed Stats</h4>
+                                        <p>Last Week: 80%</p>
+                                        <p>Last Month: 85%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-btn">
+                                <button class="W">Assignment</button>
+                                <button class="B"> Attendance</button>
+                            </div>
+                            
+                        </div>
+    
+                       
+    
+            </div>
+            <div class="swiper-button-next in"></div>
+            <div class="swiper-button-prev out"></div><br><br>
+    
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="action backtoprofile">
+            <button class="back" onclick="showProfile()">Back to Profile</button>
+        </div>
+          
+        </div>
+         
+         
+        </div>
+    </section>
+ </section>
+  <!-- end of attendance -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+
+
+
+
+
+</body>
+</html>

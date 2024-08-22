@@ -1,0 +1,358 @@
+@media screen and (max-width:768px) {
+    body{
+        margin: 20px;
+        background:#000000;
+
+    }
+    
+    /* *{
+        border: 1px solid black;
+    } */
+    #navbar .nav{
+        background: none;
+    }
+    .nav{
+        padding: 10px;
+        font-size: 13px;
+    }
+    .other-section{
+        display: none;
+    }
+    #main{
+        /* display: inline-block; */
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+    .chidd{
+        
+        width: 100%;
+    }
+    .main-image{
+        width: 100% !important;
+        /* width: auto !important; */
+        display: flex !important;
+        justify-content: center !important;
+        
+    
+        
+    }
+    
+    
+
+    
+    
+
+    .profile-content{
+       
+        margin-top: -500px;
+       padding-bottom: 20px;
+       background: none;
+       box-shadow: rgba(50, 50, 93, 0.911) 0px 50px 100px -20px, rgba(0, 0, 0, 0) 0px 30px 60px -30px, rgb(10, 37, 64) 0px -2px 6px 0px inset;
+    }
+    .student-details{
+        background: none;
+    }
+    .main-image{
+        display: block;
+        width: 400px;
+        height: 700px;
+       
+    }
+    .details h1{
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 30px;
+    }
+    .B{
+        border: 2px solid rgb(255, 255, 255) !important;
+        background-color: #000000;
+        color: white;
+    }
+    .W{
+        border: none;
+    }
+    .W:hover{
+        border: 2px solid rgb(255, 255, 255) !important;
+        background: #000000 !important;
+        color: white !important;
+    }
+    .B:hover{
+        /* border: 2px solid rgb(0, 0, 0) !important; */
+        background: #ffffff !important;
+        color: rgb(0, 0, 0) !important;
+       
+    }
+    .notification{
+        display: none;
+    }
+    .swap-wrap{
+        padding: 30px;
+        padding-top: 20px;
+        width: 100%;
+        box-shadow: rgba(50, 50, 93, 0.911) 0px 50px 100px -20px, rgba(0, 0, 0, 0) 0px 30px 60px -30px, rgb(10, 37, 64) 0px -2px 6px 0px inset;
+    }
+    .coarse_content h3{
+        font-size: 25px;
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+    .coarse_type .p{
+        margin-left: 0;
+    }
+    .pd{
+        margin-left: 0;
+    }
+    .in{
+        visibility: hidden;
+    }
+    .swiper-button-prev{
+        visibility: hidden;
+    }
+   #mai{
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -500px;
+   }
+   #fees{
+    margin-top: -600px;
+   }
+   .fees-area{
+    padding: 0;
+   }
+   .up{
+    flex-direction: column;
+   }
+   .bd{
+    padding: 10px;
+    padding-top: 10px;
+    padding-left: 40px;
+   }
+   .asset-detail p,li{
+    padding:10px ;
+    font-size: 18px;
+}
+.asset-1{
+    width: 100%;
+    padding: 0;
+    
+}
+.asset-detail{
+    padding: 10px;
+    background:white;
+    color: black;
+}
+#Assessment{
+    margin-top: -550px;
+}
+.scroll{
+    max-height: 290px;
+}
+#Assessment .action-btn{
+    padding: 10px;
+    padding-bottom: 0;
+}
+#Assessment h1{
+    font-size: 40px;
+}
+.action-btn button{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+#More{
+    top: 100px !important;
+}
+#More.active {
+    right: 50px !important;
+    left: 20px;
+     
+ }
+ #attendance{
+    margin-top: -550px;
+ }
+ .attendance-content .progress-circle {
+    width: 130px;
+    height: 130px;
+    
+}
+
+}
+@media (min-width: 768px) and (max-width: 1269px) {
+
+    #More.active {
+        right: 50px !important;
+        left: 700px;
+         
+     }
+
+    .asset-detail{
+        padding: 10px;
+        
+    }
+    .bd{
+        padding: 10px;
+        padding-top: 10px;
+        padding-left: 40px;
+       }
+       .asset-detail p,li{
+        padding:10px ;
+        font-size: 18px;
+    }
+    .up{
+        flex-direction: column;
+       }
+       
+  }
+  @media screen and (max-width: 410px){
+
+    #More.active {
+        right: 0px !important;
+        left: -30px;
+         
+     }
+     
+    .main-image{
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        
+            align-items: center !important ;
+    
+        
+    }
+    
+    .asset-detail{
+        padding: 5px;
+    }
+    .bd{
+        padding: 0px;
+        padding-top: 10px;
+        padding-left: 25px;
+        padding-bottom: 10px;
+       }
+       .asset-detail p,li{
+        padding:10px ;
+        font-size: 12px;
+    }
+    .up{
+        flex-direction: column;
+       }
+
+       .main-icons h2{
+        text-align: center;
+       }
+    .semester p{
+        font-size: 13px;
+        
+    }
+    
+    .swap-wrap{
+        width: 100%;
+        padding: 0 5px 20px 5px;
+        
+    }
+    .coarse_type .p{
+       
+         padding: 10px;
+      }
+    .slide-btn{
+       
+        gap: 10px !important;
+    }
+    .slide-btn button{
+        font-size: 10px;
+    }
+    .mint{
+        margin-left: 70px;
+        width: 0%;
+        justify-content: right !important
+        ;
+        gap: 10px;
+    }
+    .scroll{
+        padding: 0px;
+    }
+    body{
+        margin: 1px !important;
+    }
+    .profile-content{
+        margin-top: -400px !important;
+       }
+  } 
+ 
+  @media screen and (max-width: 336px){
+    
+    #More.active {
+        right: 0px !important;
+        left: -35px;
+         
+     }
+    .details h1{
+        font-size: 20px;
+    }
+    .student-details p{
+        font-size:13px ;
+    }
+    
+    .attendance-content .progress-circle {
+        width: 100px !important;
+        height: 100px !important;
+        
+    }
+  }
+  @media screen and (max-width: 500px){
+
+   
+    #More.active {
+        right: 0px !important;
+        left: -35px;
+         
+     }
+    .main-image{
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        
+            align-items: center !important ;
+    
+        
+    }
+    .scroll{
+        padding: 0px;
+    }
+    .asset-detail p,li{
+        padding:10px ;
+        font-size: 15px;
+    }
+   
+    .coarse_type .p{
+       
+        padding: 10px;
+     }
+     #attendance{
+        margin-top: -550px;
+     }
+     .attendance-content .progress-circle {
+        width: 130px;
+        height: 130px;
+        
+    }
+}
+@media (min-width: 770px) and (max-width: 900px){
+    #More.active {
+        right: 60px !important;
+        left: 300px;
+         
+     }
+}
+@media (min-width: 900px) and (max-width: 1120px){
+    #More.active {
+        right: 60px !important;
+        left: 500px;
+         
+     }
+}
